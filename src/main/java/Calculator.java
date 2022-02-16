@@ -56,7 +56,7 @@ class Calculator {
             num2 = num3;
             counter = counter + 1;
         }
-        return num2;
+        return num1;
     }
 
 
@@ -73,6 +73,9 @@ class Calculator {
         {
             s =  ( (n % 2 ) == 0 ? "0" : "1") +s;
             n = n / 2;
+        }
+        if (s.equals("")){
+            return "0";
         }
         return s;
     }
